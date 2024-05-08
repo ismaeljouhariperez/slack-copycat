@@ -1,0 +1,34 @@
+/* TODO: slack layout */
+.container{
+  display: flex;
+  height: 100vh;
+  margin:0;
+  padding:0;
+}
+
+section{
+  display: flex;
+  height: 100%;
+}
+
+.sidebar{
+  background-color: #261C25;
+  padding:0 1em;
+}
+
+.channels{
+  background-color: #4B3949;
+  padding: 1em 1em;
+  min-width:15%;
+}
+
+.chat{
+  background-color: white;
+  flex-grow:1;
+}
+
+@media all and (max-width: 1024px){
+  .channels{
+    min-width:30%;
+  }
+}

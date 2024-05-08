@@ -1,0 +1,58 @@
+
+.sidebar{
+  display: flex;
+  justify-content: center;
+}
+
+ul.namespaces {
+  margin-top: 20px;
+  /* padding: .5em; */
+  display: flex;
+  flex-flow:column;
+}
+
+.namespaces li {
+  margin-bottom: 10px;
+  opacity: 1;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  color:#524951;
+  font-size:1.1em;
+  transition: all .3s;
+}
+
+.chat-categories li.active{
+  color: white;
+}
+
+.namespaces li:hover, .namespaces li.active{
+  background-color: #524951;
+  color: white;
+  cursor: pointer;
+}
+
+section.channels {
+  display: flex;
+  flex-flow: column;
+  background-color: #4B3949;
+}
+
+.user-status::before {
+  content: '●';
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+.user-status.online::before  {
+  color: #20E5BD;
+}
+
+.user-status.offline::before{
+  color:rgba(255, 255, 255,.5);
+}
+
+figure i{
+  margin-right: 5px;
+}
